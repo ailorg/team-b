@@ -27,6 +27,8 @@ db = DatabaseAccessor.get_session(app.config)
 
 @api.route("/hello")
 class Hello(Resource):
+
+    @staticmethod
     def get():
         return {"Hello":"World!"}
 
