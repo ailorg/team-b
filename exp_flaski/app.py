@@ -1,5 +1,4 @@
-from flask import Flask, render_template, abort
-from flask import Flask, render_template, abort, request
+from flask import Flask, render_template, abort, request, jsonify
 from flaski.models import WikiContent
 from flaski.database import db
 from datetime import datetime
@@ -19,26 +18,21 @@ def shutdown_session(exception=None):
 
 
 @app.route("/")
-def hello():
-    contents = WikiContent.query.all()
-    return render_template("show_content.html", content=content)
+def index():
+    return render_template('index.html')
 
 
-@app.route("/<title>", methods=["POST"])
-def post_content(title=None):
-    if title is None:
+@app.route("/<class_name>", methods=["GET"])
+def post_content(class_name=None):
+    if class_name is None:
         abort(404)
-    content = db.query(WikiContent).filter_by(title=title).first()
+    content = db.query(WikiContent).filter_by(class_name=class_name).first()
     if content is None:
-        content = WikiContent(title,
-                              request.form["body"]
-                              )
+        return "NO DATA"
     else:
-        content.body = request.form["body"]
-        content.date = datetime.now()
-    db.add(content)
-    db.commit()
-    return content.body
+        return jsonify(class_name=content.class_name,
+                       teacher = content.teacher,
+                       text = content.text)
 
 if __name__ == "__main__":
     app.run()
