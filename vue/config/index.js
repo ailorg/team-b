@@ -18,7 +18,11 @@ module.exports = {
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
-    poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
+    watch: true,
+    watchOptions: {
+      aggregateTimeout: 300,
+      poll: 1000
+    },
 
     
     /**
