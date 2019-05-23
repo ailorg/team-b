@@ -1,23 +1,35 @@
-# view-template
+PSI-Basic
 
-> A Vue.js project
-
-## 初期設定
-
-``` bash（ターミナルでの操作）
-# パッケージのインストール
+# 初期設定
+パッケージのインストール
+```
 $ npm install
-
-# サーバー起動 （ブラウザに localhost:8080 と入力）
-$ npm run dev
-
-## その他
-
-# データ容量を削減してビルド
-$ npm run build
-
-# build for production and view the bundle analyzer report
-$ npm run build --report
+$ pip install flask
+```
+ 
+# 起動方法
+ファイルに変更があるたびにビルド
+```
+$ npm run watch
+```
+Flaskを開始
+```
+$ FLASK_APP=app.py FLASK_DEBUG=1 flask run
+```
+Windowsの場合
+```
+$ set FLASK_APP=app.py
+$ set FLASK_DEBUG=1
+$ flask run
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# その他
+webpackerでサーバー起動 （ブラウザに localhost:8080 と入力）
+```
+$ npm run dev
+```
+
+ビルドして本番環境を用意
+```
+$ npm run build
+```
