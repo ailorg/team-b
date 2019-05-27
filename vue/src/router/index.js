@@ -24,6 +24,12 @@ export default new Router({
     },
 
     {
+    path: '/about',
+    name: 'About',
+    component: About
+    },
+
+    {
       path: '/Top',
       name: 'Top',
       component: Top
