@@ -12,6 +12,8 @@ Vue.use(BootstrapVue)
 
 Vue.use(NowUiKit);
 
+import Input from '@/components/Input'
+Vue.component('vue-input', Input)
 Vue.config.productionTip = false
 
 
