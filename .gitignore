@@ -1,6 +1,5 @@
 .DS_Store
-vue/node_modules/
-*node_modules
+
 *dist/
 dist/
 npm-debug.log*
@@ -120,7 +119,6 @@ ENV/
 /.settings/
 .idea/
 *.iml
-node_modules/
 app/static/js/bundle.js
 app/static/js/bundle.js.map
 log
