@@ -2,7 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Top from '@/components/TOP'
+import About from '@/components/About'
+import HelloWorld from '@/components/TOP'
 import Index from '@/pages/Index'
+
 import Landing from '@/pages/Landing.vue';
 import Login from '@/pages/Login.vue';
 import Profile from '@/pages/Profile.vue';
