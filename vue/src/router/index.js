@@ -18,21 +18,22 @@ export default new Router({
   routes: [
 
     {
-      path: '/home',
+      path: '/',
       name: 'Home',
       component: Home
+    },
+
+    
+    {
+      path: '/about',
+      name: 'About',
+      component: About
     },
 
     {
       path: '/',
       name: 'HelloWorld',
       component: HelloWorld
-    },
-
-    {
-    path: '/about',
-    name: 'About',
-    component: About
     },
 
     {
