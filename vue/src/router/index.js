@@ -23,13 +23,6 @@ export default new Router({
       component: Home
     },
 
-    
-    {
-      path: '/about',
-      name: 'About',
-      component: About
-    },
-
     {
       path: '/',
       name: 'HelloWorld',
@@ -48,7 +41,14 @@ export default new Router({
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: 'black' }
-      }
+      },
     },
-  ],
+    
+    {
+      path: '/about',
+      name: 'About',
+      component: About
+    }
+
+  ]
 })
