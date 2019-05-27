@@ -6,9 +6,7 @@ import About from '@/components/About'
 import HelloWorld from '@/components/TOP'
 import Index from '@/pages/Index'
 
-import Landing from '@/pages/Landing.vue';
-import Login from '@/pages/Login.vue';
-import Profile from '@/pages/Profile.vue';
+
 import MainNavbar from '@/layout/MainNavbar.vue';
 import MainFooter from '@/layout/MainFooter.vue';
 
@@ -24,13 +22,6 @@ export default new Router({
       name: 'Home',
       component: Home
     },
-
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-
     {
       path: '/Top',
       name: 'Top',
