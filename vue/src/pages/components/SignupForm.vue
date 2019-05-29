@@ -1,9 +1,7 @@
 <template>
-  <div
-    class="section section-signup"
-    style="background-image: url('img/bg11.jpg'); background-size: cover; background-position: top center; min-height: 700px;"
-  >
-  <img src="img/bg11.jpg"/>
+  <div :style='{ backgroundImage: `url(@/img/bg11.jpg)`}'>
+  <div :style='{ backgroundImage: `url(../../img/bg11.jpg)` }'>
+  <img src="../../img/bg11.jpg"/>
     <div class="container">
       <div class="row">
         <card class="card-signup" header-classes="text-center" color="orange">
@@ -67,6 +65,7 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
 <script>
 import { Card, FormGroupInput, Button } from '@/components';
@@ -79,4 +78,6 @@ export default {
   }
 };
 </script>
-<style></style>
+<style>
+
+</style>

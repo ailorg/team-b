@@ -10,7 +10,7 @@
     <template>
       
       <router-link v-popover:popover1 class="navbar-brand" to="/">
-        Now Ui Kit
+        P-JUDGE
       </router-link>
       <el-popover
         ref="popover1"

@@ -9,7 +9,7 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
-      path: '/index2',
+      path: '/',
       name: 'index',
       components: {
         default: Starter,
