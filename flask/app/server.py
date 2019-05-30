@@ -38,7 +38,8 @@ def get_class(class_name=None):
     else:
         return jsonify(class_name=content.class_name,
                        teacher = content.teacher,
-                       text = content.text)
+                       text = content.text,
+                       score = content.score)
 
 @app.route('/health')
 def get_health():
