@@ -13,3 +13,4 @@ def return_json():
         "results": request.json["text"].split()
     }
     return jsonify(result)
+

@@ -18,6 +18,7 @@ import Vue from 'vue'
 import Input from './Input'
 import TimeLine from './TimeLine'
 import data from '../assets/data.json'
+import axios from 'axios'
 
 export default {
   components: {
@@ -33,8 +34,16 @@ export default {
     }
   },
   methods: {
-    onSubmit () {
-        console.log('送信')
+    onSubmit: function() {
+        console.log('送信');
+        axios.post('/api', this.formData)
+          .then(response => {
+            this.results = response.data.results;
+            this.seen = true;
+          })
+        .catch(error => {
+          console.log(error);
+        })
       }
   }
 }
