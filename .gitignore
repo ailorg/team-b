@@ -15,10 +15,10 @@ yarn-error.log*
 *.sln
 
 # Byte-compiled / optimized / DLL files
-__pycache__/
+__pycache__/*
 *.py[cod]
 *$py.class
-/__pycache__/
+/__pycache__/*
 *node_modules/
 /node_modules/
 
