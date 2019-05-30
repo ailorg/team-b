@@ -26,7 +26,7 @@
     <div class="main">
      
     </div>
-    <ManyCard/>
+    <ManyCard :lectures="lectures" label="Lectures" name="Lectures"></ManyCard>
 
     <div class="section">
       <div class="container text-center">
@@ -35,6 +35,7 @@
   </div>
 </template>
 <script>
+import Vue from 'vue'
 import  { Parallax } from '@/components';
 import BasicElements from './components/BasicElementsSection';
 import Navigation from './components/Navigation';
@@ -50,6 +51,7 @@ import ExamplesSection from './components/ExamplesSection';
 import DownloadSection from './components/DownloadSection';
 import MainNavbar from '@/layout/MainNavbar.vue';
 import ManyCard from '@/components/Cards/ManyCard';
+import data from '../assets/data.json'
 import {
   Button,
   Checkbox,
@@ -79,6 +81,11 @@ export default {
     SignupForm,
     ExamplesSection,
     DownloadSection
+  },
+  data () {
+    return{
+      lectures: data.lectures,
+    }
   }
 };
 </script>

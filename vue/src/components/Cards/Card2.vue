@@ -1,7 +1,8 @@
 <template>
 <div>
+  <!--使ってない-->
   <b-card
-    title="Card Title"
+    title= "title"
     img-src="https://picsum.photos/600/300/?image=25"
     img-alt="Image"
     img-top
@@ -10,7 +11,7 @@
     class="mb-2"
   >
     <b-card-text>
-      Some quick example text to build on the card title and make up the bulk of the card's content.
+      <p>{{lecture.content}}</p>
     </b-card-text>
 
     <b-button href="#" variant="primary">Go somewhere</b-button>
@@ -21,6 +22,9 @@
 <script>
   export default {
     name: 'card2',
+    props: {
+      lecture: Object,
+    },
     data () {
        return {
          imgSrc: "..."
@@ -28,3 +32,6 @@
     }
   }
 </script>
+
+<style>
+</style>

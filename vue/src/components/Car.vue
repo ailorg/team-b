@@ -1,11 +1,11 @@
 <template>
-  <p>{{timeline.date}} - {{timeline.event}}</p>
+  <p>{{lecture.date}} - {{lecture.name}}</p>
 </template>
 
 <script>
 export default {
   props: {
-    timeline: Object,
+    lecture: Object,
   }
 }
 </script>
