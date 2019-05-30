@@ -9,7 +9,7 @@
       </div>
     </form>
 
-    <time-line :timelines="timelines" label="TimeLine" name="timeline"></time-line>
+    <time-line :lectures="lectures" label="TimeLine" name="timeline"></time-line>
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
   },
   data () {
     return {
-      timelines: data.timelines,
+      lectures: data.lectures,
       form: {
         input: 'Search'
       }

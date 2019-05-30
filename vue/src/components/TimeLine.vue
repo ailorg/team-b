@@ -2,7 +2,7 @@
 <template>
   <div>
     <ul>
-      <Car v-for="tl in timelines" :timeline="tl" :key="tl.id"></Car>
+      <Car v-for="le in lectures" :lecture="le" :key="le.id"></Car>
     </ul>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
     Car
   },
   props: {
-    timelines: Array,
+    lectures: Array,
   }
 }
 </script>
