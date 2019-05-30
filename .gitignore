@@ -1,6 +1,5 @@
 .DS_Store
-vue/node_modules/
-*node_modules
+
 *dist/
 dist/
 npm-debug.log*
@@ -17,8 +16,12 @@ yarn-error.log*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*__pycache__/
 *.py[cod]
 *$py.class
+/__pycache__/
+*node_modules/
+/node_modules/
 
 # C extensions
 *.so
@@ -120,7 +123,6 @@ ENV/
 /.settings/
 .idea/
 *.iml
-node_modules/
 app/static/js/bundle.js
 app/static/js/bundle.js.map
 log
