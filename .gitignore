@@ -126,3 +126,5 @@ ENV/
 app/static/js/bundle.js
 app/static/js/bundle.js.map
 log
+
+node_modules
